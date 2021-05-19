@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Upload_Multiple";
+
+    string display = ViewBag.Et;
+}
+
+<h2>Upload_Multiple</h2>
+
+@*因為要上傳檔案enctype記得加上*@
+@using (Html.BeginForm("Uploaded", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @*因為要多個上傳 所以要用到multiple屬性*@
+    <input type="file" name="files" multiple class="btn btn-primary" />
+    <input type="submit" value="上傳" />
+}
+
+
+
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"> </script>
+@section Scripts {
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/ bundles / jqueryval")
+}

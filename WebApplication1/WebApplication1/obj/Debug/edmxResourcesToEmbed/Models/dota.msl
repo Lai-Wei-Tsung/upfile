@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="test1ModelStoreContainer" CdmEntityContainer="test1Entities">
+    <EntitySetMapping Name="t1">
+      <EntityTypeMapping TypeName="test1Model.t1">
+        <MappingFragment StoreEntitySet="t1">
+          <ScalarProperty Name="LImag" ColumnName="LImag" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Imag" ColumnName="Imag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
